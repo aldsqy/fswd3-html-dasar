@@ -1,7 +1,15 @@
 const input = document.querySelector('.input-btn input');
 const listTasks = document.querySelector('.list-tasks ul');
 const message = document.querySelector('.list-tasks');
+var list = document.querySelector('ul');
 let tasks = [];
+
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
 
 eventListeners();
 function eventListeners(){
@@ -77,11 +85,3 @@ function showError(error){
 function clearHTML(){
     listTasks.innerHTML = '';
 }
-
-// Add a "checked" symbol when clicking on a list item
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
