@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8f8f8;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #bd00ff;
+  padding: 0px 80px;
+}
+
+.navbar-brand {
+  font-size: 20px;
+  color: #fff;
+}
+
+.navbar-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  margin-right: 40px;
+}
+
+.navbar-links li:last-child {
+  margin-right: 0;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a {
+  color: #fff;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #fff;
+  color: #bd00ff;
+}
+
+.section-1 {
+  padding: 20px 0px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+}
+
+.section-1-1 h1 {
+  font-size: 32px;
+}
+
+.section-2-1 h1 {
+  font-size: 24px;
+}
+
+.section-3-1 {
+  padding-top: 20px;
+}
+.section-3-1 h1 {
+  font-size: 24px;
+}
+
+.section-3-1 a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 20px 20px 20px 80px;
+  overflow: hidden;
+}
+.container2 {
+  display: flex;
+}
+
+.box {
+  display: inline-block;
+  width: 320px;
+  height: auto;
+  margin: 8px;
+  background: #ffffff;
+  padding-bottom: 16px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.img {
+  margin: 16px 16px 0px 16px;
+  width: 289px;
+  border-radius: 10px;
+}
+
+.h3 {
+  padding-left: 16px;
+  font-size: 20px;
+}
+
+.p {
+  padding-left: 16px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px 0px;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    margin-left: 40px;
+    margin-bottom: 10px;
+  }
+
+  .navbar-brand {
+    margin-left: 40px;
+    margin-bottom: 20px;
+  } 
+
+  .section-1 {
+    display: flex;
+    margin-left: 40px;
+    justify-content: left;
+  }
+
+  .box {
+    display: inline-block;
+    width: fit-content;
+  }
+  
+  .img {
+    margin: 16px 16px 0px 16px;
+    width: 95%;
+    border-radius: 10px;
+  }
+
+  .container {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-3-1 {
+    margin-left: 40px;
+  }
+}
